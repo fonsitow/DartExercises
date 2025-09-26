@@ -1,0 +1,58 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "collection",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/io-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "path",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "source_span",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "string_scanner",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "term_glyph",
+      "rootUri": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "mi_proyecto_dart",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.9.2",
+  "flutterRoot": "file:///C:/Android/flutter",
+  "flutterVersion": "3.35.3",
+  "pubCache": "file:///C:/Users/Alfonso%20H/AppData/Local/Pub/Cache"
+}
