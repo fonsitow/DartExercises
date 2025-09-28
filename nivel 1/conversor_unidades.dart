@@ -68,7 +68,6 @@ void continuar(double metros) {
   }
   if (respuesta?.toLowerCase() == 's') {
     print("Calculando...");
-
     equivalente(metros);
   } else {
     print('Esta bien, gracias por usar el programa');
