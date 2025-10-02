@@ -50,7 +50,7 @@ void main() {
 
     if (inputUser != null && users.containsKey(inputUser)) {
       users[inputUser];
-    } 
+    }
 
     if (inputUser == null || inputUser.isEmpty) {
       print('Usuario inválido. Intenta de nuevo.');
@@ -59,7 +59,7 @@ void main() {
 
     if (users.containsKey(inputUser)) {
       print('Usuario duplicado, no se permiten votos dobles');
-    }else{
+    } else {
       print('Hola $inputUser gracias por votar');
     }
 
@@ -67,28 +67,33 @@ void main() {
       candidatos(votantes);
       votantes.add(true);
       users[inputUser] = input;
-    }else if(input == 'L'){
+    } else if (input == 'L') {
       candidatos(votantes);
       votantes.add(false);
       users[inputUser] = input;
-    }else{
+    } else {
       print('candidato incorrecto');
+      continue;
     }
 
+    Map<String, int> resultados = candidatos(votantes);
+    votaciones(resultados);
+  }
+}
 
-    candidatos(votantes);
-    print(users);
-
-  }}
-
-void votaciones(Map<String, int> votos){
-  int maxVotos = votos.values.isEmpty ? 0 : votos.values.reduce((a, b) => a > b ? a : b);
+void votaciones(Map<String, int> votos) {
+  int maxVotos =
+      votos.values.isEmpty ? 0 : votos.values.reduce((a, b) => a > b ? a : b);
   if (maxVotos == 0) {
     print('No hay votos aún.');
     return;
   }
 
-  int barraMax = 30;
+  int barraMax = 30; // longitud máxima de barra ASCII
+
+  votos.forEach((candidato, votos) {
+    int longitudBarra = ((votos / maxVotos) * barraMax).round();
+    String barra = '▓' * longitudBarra;
+    print('$candidato: $votos votos |$barra');
+  });
 }
-
-
