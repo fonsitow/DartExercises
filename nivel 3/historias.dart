@@ -3,7 +3,6 @@
 ! Combina listas de personajes, lugares y acciones para crear frases únicas cada vez.
 */
 
-import 'dart:io';
 import 'dart:math';
 
 import '../utilidades.dart';
@@ -39,5 +38,5 @@ String frasesMaker(){
 }
 void main() {
     encabezado('Bienvenido a historias aleatorias', 45);
-        frasesMaker();
+        print(frasesMaker());
 }
